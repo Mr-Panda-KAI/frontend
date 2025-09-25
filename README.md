@@ -1,7 +1,7 @@
-# 🤖 AIni Pay - Transacciones Fáciles en Redes EVM + Celestia
+# 🤖 Mr Panda KAI - Transacciones Fáciles en Redes EVM + Celestia
 
 <div align="center">
-  <img src="./src/assets/IA chat/logo.png" alt="AIni Pay Logo" width="200"/>
+  <img src="./src/assets/IA chat/logo.png" alt="Mr Panda KAI Logo" width="200"/>
   
   [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
   [![Project Status](https://img.shields.io/badge/Status-In%20Development-yellow.svg)]()
@@ -11,13 +11,13 @@
   [![Celestia Network](https://img.shields.io/badge/Network-Celestia-purple.svg)](https://celestia.org/)
 </div>
 
-🎉 **AIni Pay - Aplicación Multi-Chain Totalmente Funcional!**
+🎉 **Mr Panda KAI - Aplicación Multi-Chain Totalmente Funcional!**
 
 ---
 
 ## 📋 Descripción
 
-**AIni Pay** es una aplicación web3 que combina **inteligencia artificial conversacional** con **transacciones blockchain** en redes **EVM** y **Celestia**.  
+**Mr Panda KAI** es una aplicación web3 que combina **inteligencia artificial conversacional** con **transacciones blockchain** en redes **EVM** y **Celestia**.  
 Los usuarios pueden transferir criptomonedas con simples comandos de chat en lenguaje natural, sin lidiar con la complejidad de los contratos.
 
 ---
@@ -68,7 +68,7 @@ Los usuarios pueden transferir criptomonedas con simples comandos de chat en len
 | **Modelo**     | Smart contracts         | Peer-to-peer      |
 | **Gas Fees**   | Variables               | Fijos, muy bajos  |
 | **Programación** | Solidity              | Cosmos SDK (Go)   |
-| **Uso en AIni Pay** | Tokens **S**        | Tokens **TIA**    |
+| **Uso en Mr Panda KAI** | Tokens **S**        | Tokens **TIA**    |
 
 ---
 
