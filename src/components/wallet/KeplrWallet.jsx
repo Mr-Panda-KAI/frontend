@@ -156,10 +156,10 @@ const KeplrWallet = () => {
     return typeof window !== 'undefined' && !!window.keplr;
   };
 
-  // Conectar a Keplr
+  // Connect to Keplr
   const connectKeplr = async () => {
     if (!isKeplrInstalled()) {
-      alert('Por favor instala Keplr wallet: https://www.keplr.app/');
+      alert('Please install Keplr wallet: https://www.keplr.app/');
       return;
     }
 
@@ -291,7 +291,7 @@ const KeplrWallet = () => {
     setBalance('0.000000 (No disponible)');
   };
 
-  // Desconectar
+  // Disconnect
   const disconnect = () => {
     setIsConnected(false);
     setAddress('');
@@ -300,7 +300,7 @@ const KeplrWallet = () => {
     console.log(`🔌 Desconectado de Keplr`);
   };
 
-  // Cambiar red y reconectar si es necesario
+  // Change network and reconnect if necessary
   const changeNetwork = async (networkKey) => {
     console.log(`🔄 Cambiando a red: ${networkKey}`);
     setSelectedNetwork(networkKey);
@@ -344,7 +344,7 @@ const KeplrWallet = () => {
   useEffect(() => {
     // Verificar si ya está conectado al cargar
     if (isKeplrInstalled() && window.keplr.defaultOptions) {
-      // Intentar reconectar automáticamente
+      // Try to reconnect automatically
     }
   }, []);
 
@@ -388,7 +388,7 @@ const KeplrWallet = () => {
           className="w-full relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1 px-4 text-n-1"
         >
           <span className="relative z-10">
-            {isLoading ? 'Conectando...' : 'Conectar Keplr (Celestia)'}
+            {isLoading ? 'Connecting...' : 'Connect Keplr (Celestia)'}
           </span>
         </Button>
       ) : (
@@ -430,7 +430,7 @@ const KeplrWallet = () => {
             onClick={disconnect}
             className="w-full relative inline-flex items-center justify-center h-11 transition-colors hover:text-red-400 px-4 text-n-1 border border-red-400/50"
           >
-            <span className="relative z-10">Desconectar Keplr</span>
+            <span className="relative z-10">Disconnect Keplr</span>
           </Button>
         </div>
       )}

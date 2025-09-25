@@ -95,31 +95,31 @@ export const CHAIN_EXPLORERS = {
 export const getAddressExplorerUrl = (chainId, address) => {
   const explorer = CHAIN_EXPLORERS[chainId];
   if (!explorer) {
-    console.warn(`Explorer no configurado para chain ID: ${chainId}`);
+    console.warn(`Explorer not configured for chain ID: ${chainId}`);
     return '#';
   }
   return `${explorer.addressUrl}${address}`;
 };
 
 /**
- * Obtiene la URL del explorador para una transacción en una red específica
- * @param {number} chainId - ID de la red
- * @param {string} txHash - Hash de la transacción
- * @returns {string} URL completa del explorador
+ * Gets the explorer URL for a transaction on a specific network
+ * @param {number} chainId - Network ID
+ * @param {string} txHash - Transaction hash
+ * @returns {string} Complete explorer URL
  */
 export const getTransactionExplorerUrl = (chainId, txHash) => {
   const explorer = CHAIN_EXPLORERS[chainId];
   if (!explorer) {
-    console.warn(`Explorer no configurado para chain ID: ${chainId}`);
+    console.warn(`Explorer not configured for chain ID: ${chainId}`);
     return '#';
   }
   return `${explorer.txUrl}${txHash}`;
 };
 
 /**
- * Obtiene el nombre del explorador para una red específica
+ * Gets the explorer name for a specific network
  * @param {number} chainId - ID de la red
- * @returns {string} Nombre del explorador
+ * @returns {string} Explorer name
  */
 export const getExplorerName = (chainId) => {
   const explorer = CHAIN_EXPLORERS[chainId];

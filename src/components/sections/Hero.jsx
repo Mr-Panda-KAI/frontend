@@ -27,7 +27,7 @@ const Hero = () => {
   const [keplrAddress, setKeplrAddress] = useState('');
   const [isConnecting, setIsConnecting] = useState(false);
   
-  // Detectar cuando se conecta exitosamente con EVM
+  // Detect when EVM connection is successful
   useEffect(() => {
     if (isEvmConnected && isConnecting) {
       setIsConnecting(false);
@@ -43,7 +43,7 @@ const Hero = () => {
       // Abrir el modal de Reown AppKit directamente
       await open();
     } catch (error) {
-      console.error('Error abriendo modal de Reown:', error);
+      console.error('Error opening Reown modal:', error);
       setIsConnecting(false);
     }
   };
@@ -128,7 +128,7 @@ const Hero = () => {
                 aiButton
                 className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 transform hover:scale-105 transition-all duration-300"
               >
-                🔗 Conectar con EVM
+                🔗 Connect EVM
               </Button>
             </div>
             <div className="bottom-16">
@@ -137,7 +137,7 @@ const Hero = () => {
                 aiButton
                 className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 transform hover:scale-105 transition-all duration-300"
               >
-                🌟 Conectar Keplr CELESTIA
+                🌟 Connect Keplr CELESTIA
               </Button>
             </div>
           </div>

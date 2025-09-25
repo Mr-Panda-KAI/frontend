@@ -5,7 +5,7 @@ import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import MenuSvg from "../../assets/svg/MenuSvg";
 import { Button } from "../ui";
 import { HambugerMenu } from "../design/Header";
-import logo from "../../assets/IA chat/AIniPay_Logo.png";
+import logo from "../../assets/IA chat/LogoPandaKAIofi.png";
 
 // Componente simplificado para mostrar solo el botón de Reown
 const DesktopWallet = () => {
@@ -49,11 +49,11 @@ const Header = () => {
             src={logo}
             width={40}
             height={40}
-            alt="AIni Pay"
+            alt="Mr Panda KAI"
             className="pointer-events-none select-none mr-3"
           />
           <span className="text-xl font-bold text-white">
-            <span className="text-red-400">AI</span>ni Pay
+            Mr Panda KAI
           </span>
         </a>
 
